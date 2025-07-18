@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalBoost Agency</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #0a74da;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 60px;
+  text-align: center;
+  background: white;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0a74da;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #0a74da;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <header>
+    <h1>DigitalBoost Agency</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Grow Your Business with Digital Marketing</h2>
+    <p>We help brands scale through SEO, PPC, and content strategy.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DigitalBoost Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
