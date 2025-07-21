@@ -1,0 +1,8 @@
+{
+  "primary": "#0A84FF",
+  "secondary": "#FF5A5F",
+  "accent": "#FFD600",
+  "background": "#F9FAFB",
+  "dark": "#1A1A1A",
+  "gradient": "linear-gradient(120deg, #0A84FF 0%, #F9FAFB 100%)"
+}
