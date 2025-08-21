@@ -1,0 +1,8 @@
+<svg width="400" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="200" cy="200" rx="180" ry="20" fill="#F9FAFB"/>
+  <rect x="110" y="60" width="180" height="80" rx="20" fill="#0A84FF"/>
+  <rect x="140" y="100" width="120" height="40" rx="10" fill="#FFD600"/>
+  <circle cx="200" cy="90" r="14" fill="#FF5A5F"/>
+  <rect x="175" y="120" width="50" height="20" rx="6" fill="#fff"/>
+  <text x="120" y="50" font-family="Poppins, sans-serif" font-size="22" font-weight="bold" fill="#0A84FF">Digital Growth</text>
+</svg>
