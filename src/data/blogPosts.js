@@ -1,3 +1,5 @@
+import { generateMarketingPosts } from './autoPosts.js';
+
 export const blogPosts = [
   {
     id: 1,
@@ -383,7 +385,7 @@ While the hype has cooled, the underlying technology and creative potential rema
     readTime: "9 min",
     image: "/hero-illustration.svg"
   }
-];
+].concat(generateMarketingPosts(1000));
 
 export const categories = [
   "All",
@@ -394,7 +396,15 @@ export const categories = [
   "NFTs",
   "DeFi",
   "Trading",
-  "News"
+  "News",
+  // Marketing categories
+  "SEO",
+  "Content",
+  "PPC",
+  "Social",
+  "Email",
+  "CRO",
+  "Analytics"
 ];
 
 export const featuredPost = blogPosts[0];

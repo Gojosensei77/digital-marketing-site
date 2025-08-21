@@ -22,7 +22,7 @@ const Hero = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/hero-illustration.svg') center/cover no-repeat;
+    background: url(${import.meta.env.BASE_URL + 'hero-illustration.svg'}) center/cover no-repeat;
     opacity: 0.1;
     z-index: 1;
   }
