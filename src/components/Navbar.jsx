@@ -151,8 +151,10 @@ function Navbar() {
           <StyledLink to="/blog" onClick={closeMenu}>Blog</StyledLink>
           <StyledLink to="/category/Analysis" onClick={closeMenu}>Analysis</StyledLink>
           <StyledLink to="/category/Guide" onClick={closeMenu}>Guides</StyledLink>
+          <StyledLink to="/services" onClick={closeMenu}>Services</StyledLink>
           <StyledLink to="/about" onClick={closeMenu}>About</StyledLink>
-          <SearchButton onClick={closeMenu}>Subscribe</SearchButton>
+          <StyledLink to="/contact" onClick={closeMenu}>Contact</StyledLink>
+          <SearchButton as={Link} to="/contact" onClick={closeMenu}>Get Quote</SearchButton>
         </NavLinks>
         
         <MobileMenuButton onClick={toggleMenu}>
