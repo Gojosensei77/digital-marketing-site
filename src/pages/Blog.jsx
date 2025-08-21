@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Search, Filter, Clock, User, Tag } from 'lucide-react';
 import { blogPosts, categories } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const PageContainer = styled.div`
   padding-top: 80px;
@@ -251,6 +252,7 @@ const ResultsCount = styled.p`
 function Blog() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const siteUrl = 'https://example.com/blog';
 
   const filteredPosts = blogPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -265,6 +267,13 @@ function Blog() {
 
   return (
     <PageContainer>
+      <SEO
+        title="All Crypto Articles - CryptoBlog"
+        description="Browse cryptocurrency articles by topic with filters and search."
+        url={siteUrl}
+        image="/social-banner.png"
+        type="website"
+      />
       <BlogHeader>
         <HeaderContent>
           <h1>Crypto Blog</h1>
@@ -362,3 +371,4 @@ function Blog() {
 }
 
 export default Blog;
+

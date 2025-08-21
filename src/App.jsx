@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import PostDetail from './pages/PostDetail';
-import About from './pages/About';
-import Category from './pages/Category';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Home from './pages/Home.jsx';
+import Blog from './pages/Blog.jsx';
+import PostDetail from './pages/PostDetail.jsx';
+import About from './pages/About.jsx';
+import Category from './pages/Category.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+

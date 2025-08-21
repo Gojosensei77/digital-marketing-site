@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import { Calendar, Clock, User, ArrowLeft, Share2, Twitter, Facebook, Linkedin, Tag } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const PageContainer = styled.div`
   padding-top: 80px;
@@ -345,7 +346,6 @@ function PostDetail() {
     return <Navigate to="/blog" replace />;
   }
   
-  // Get related posts (same category, excluding current post)
   const relatedPosts = blogPosts
     .filter(p => p.category === post.category && p.id !== post.id)
     .slice(0, 3);
@@ -355,6 +355,15 @@ function PostDetail() {
   
   return (
     <PageContainer>
+      <SEO
+        title={`${post.title} - CryptoBlog`}
+        description={post.excerpt}
+        url={`https://example.com/post/${post.id}`}
+        image={post.image || '/social-banner.png'}
+        type="article"
+        publishedTime={post.date}
+        authorName={post.author}
+      />
       <PostHeader>
         <HeaderContent>
           <BackButton to="/blog">
@@ -463,3 +472,4 @@ function PostDetail() {
 }
 
 export default PostDetail;
+

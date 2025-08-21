@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, TrendingUp, Shield, BookOpen, Clock, User } from 'lucide-react';
 import { blogPosts, featuredPost } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const PageContainer = styled.div`
   padding-top: 80px; /* Account for fixed navbar */
@@ -336,8 +337,18 @@ const StatCard = styled.div`
 function Home() {
   const recentPosts = blogPosts.slice(1, 4);
 
+  const siteUrl = 'https://example.com';
+
   return (
     <PageContainer>
+      <SEO
+        title="CryptoBlog - Cryptocurrency News & Analysis"
+        description="Daily crypto news, deep-dive analysis, guides, and market insights."
+        keywords="crypto, bitcoin, ethereum, blockchain, defi, trading, news, analysis"
+        url={siteUrl}
+        image="/social-banner.png"
+        type="website"
+      />
       <Hero>
         <HeroContent>
           <HeroText>
@@ -477,3 +488,4 @@ function Home() {
 }
 
 export default Home;
+

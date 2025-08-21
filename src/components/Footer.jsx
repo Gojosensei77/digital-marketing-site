@@ -184,7 +184,6 @@ const Copyright = styled.p`
 function Footer() {
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
-    // Newsletter signup logic would go here
     alert('Thanks for subscribing! (This is a demo)');
   };
 
@@ -276,3 +275,4 @@ function Footer() {
 }
 
 export default Footer;
+

@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { Clock, User, ArrowLeft, TrendingUp, Shield, BookOpen, Cpu, Palette } from 'lucide-react';
 import { blogPosts, categories } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const PageContainer = styled.div`
   padding-top: 80px;
@@ -213,7 +214,6 @@ const PostCount = styled.p`
   text-align: center;
 `;
 
-// Category descriptions and icons
 const categoryData = {
   'Analysis': {
     icon: <TrendingUp size={40} />,
@@ -252,12 +252,10 @@ const categoryData = {
 function Category() {
   const { category } = useParams();
   
-  // Check if category exists
   if (!categories.includes(category) && category !== 'All') {
     return <Navigate to="/blog" replace />;
   }
   
-  // Filter posts by category
   const categoryPosts = blogPosts.filter(post => post.category === category);
   
   const categoryInfo = categoryData[category] || {
@@ -267,6 +265,13 @@ function Category() {
 
   return (
     <PageContainer>
+      <SEO
+        title={`${category} Articles - CryptoBlog`}
+        description={`Explore the latest ${category} articles on CryptoBlog.`}
+        url={`https://example.com/category/${encodeURIComponent(category)}`}
+        image="/social-banner.png"
+        type="website"
+      />
       <CategoryHeader>
         <HeaderContent>
           <BackButton to="/blog">
@@ -350,3 +355,4 @@ function Category() {
 }
 
 export default Category;
+

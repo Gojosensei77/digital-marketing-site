@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Bitcoin, Target, Users, Shield, Mail, Twitter, Linkedin, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const PageContainer = styled.div`
   padding-top: 80px;
@@ -309,6 +310,13 @@ const SecondaryButton = styled.a`
 function About() {
   return (
     <PageContainer>
+      <SEO
+        title="About CryptoBlog - Mission and Team"
+        description="We provide trustworthy cryptocurrency news, analysis, and education for all levels."
+        url={'https://example.com/about'}
+        image="/social-banner.png"
+        type="website"
+      />
       <AboutHeader>
         <HeaderContent>
           <HeaderIcon>
@@ -494,3 +502,4 @@ function About() {
 }
 
 export default About;
+
